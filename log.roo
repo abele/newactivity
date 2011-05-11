@@ -1,0 +1,11 @@
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-05-11 20:30:54
+project --topLevelPackage abele.samples.newactivity --projectName NewActivity --java 6
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-05-11 20:30:59
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-05-11 20:31:21
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity --class ~.domain.Owner
+field string --fieldName name
+entity --class ~.domain.Pet
+field string --fieldName name
+field reference --fieldName owner --type ~.domain.Owner
+gwt setup
